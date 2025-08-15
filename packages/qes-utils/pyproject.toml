@@ -1,0 +1,16 @@
+[project]
+name = "qes-utils"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "zhoudd3", email = "zhoudd3@lenovo.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "simple-chalk>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
