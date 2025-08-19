@@ -306,10 +306,14 @@ version = "0.1.0"
 source = { editable = "packages/qes-openai-client" }
 dependencies = [
     { name = "openai" },
+    { name = "qes-utils" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "openai", specifier = ">=1.100.1" }]
+requires-dist = [
+    { name = "openai", specifier = ">=1.100.1" },
+    { name = "qes-utils", editable = "packages/qes-utils" },
+]
 
 [[package]]
 name = "qes-types"
