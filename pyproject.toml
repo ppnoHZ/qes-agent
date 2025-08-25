@@ -6,8 +6,14 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.116.1",
+    "langchain-community>=0.3.27",
+    "langchain-milvus>=0.2.1",
+    "langchain-text-splitters>=0.3.9",
+    "langchain[openai]>=0.3.27",
+    "langgraph>=0.6.6",
     "load-dotenv>=0.1.0",
     "pydantic>=2.11.7",
+    "qes-embedding",
     "qes-types",
     "qes-utils",
     "uvicorn>=0.35.0",
@@ -19,6 +25,11 @@ members = [
     "packages/*"
 ]
 
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
 [tool.uv.sources]
 qes-utils = { workspace = true }
 qes-types = { workspace = true }
+qes-embedding = { workspace = true }
